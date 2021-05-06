@@ -48,9 +48,13 @@ const translateButton = (e) => {
 }
 window.onload = () => {
     setDimensions();
+
+}
+document.addEventListener("DOMContentLoaded", () => {
     let music = document.getElementById("audio");
     music.play();
-}
+
+});
 window.onresize = () => {
     setDimensions();
     document.querySelector("#btn-no").style.transform = "none";
