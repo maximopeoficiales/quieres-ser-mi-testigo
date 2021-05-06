@@ -38,7 +38,7 @@ const translateButton = (e) => {
     // let dimensionsBody = getDimensionsBody();
     let x = getRandomNumber(dimensions.x / 2.8);
     let y = getRandomNumber(dimensions.y / 2);
-    console.log(x, y);
+    // console.log(x, y);
     // console.log(x, dimensionsBody.x);
     // if (x > dimensionsBody.x || y > dimensionsBody.y) {
     //     translateButton(e);
@@ -48,6 +48,8 @@ const translateButton = (e) => {
 }
 window.onload = () => {
     setDimensions();
+    // let music = document.getElementById("audio");
+    // music.play();
 }
 window.onresize = () => {
     setDimensions();
