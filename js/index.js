@@ -67,6 +67,10 @@ document.querySelector("#btn-no").addEventListener("mouseover", (e) => {
     // detecto el button
     translateButton(e);
 });
+document.querySelector("#btn-no").addEventListener("click", (e) => {
+    // detecto el button
+    translateButton(e);
+});
 document.querySelector("#btn-si").addEventListener("click", (e) => {
     reproducirMusica();
     const swalWithBootstrapButtons = Swal.mixin({
