@@ -71,6 +71,14 @@ document.querySelector("#btn-no").addEventListener("click", (e) => {
     // detecto el button
     translateButton(e);
 });
+document.querySelector("#btn-no").addEventListener("focus", (e) => {
+    // detecto el button
+    translateButton(e);
+});
+document.querySelector("#btn-no").addEventListener("blur", (e) => {
+    // detecto el button
+    translateButton(e);
+});
 document.querySelector("#btn-si").addEventListener("click", (e) => {
     reproducirMusica();
     const swalWithBootstrapButtons = Swal.mixin({
@@ -81,7 +89,7 @@ document.querySelector("#btn-si").addEventListener("click", (e) => {
     })
     swalWithBootstrapButtons.fire({
 
-        title: `<h2 class='color-secondary'>Ya Sabia que querias 😍💕😻 </h2>`,
+        title: `<h2 class='color-secondary'>Ya Sabia que querías 😍💕😻 </h2>`,
         // icon: 'info',
         html: `
             <img src="${images[getRandomNumber(images.length)]}" alt="" srcset=""/>
