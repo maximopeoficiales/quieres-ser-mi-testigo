@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quieres ser mi novia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
+  </head>
+  <body id="body">
+    <div class="p-5 mx-auto my-4 max-w-7xl">
+      <h1 class="p-4 my-2 text-5xl text-center md:text-7xl color-primary">
+        ¿Quieres ser mi novia?
+      </h1>
+
+      <div
+        class="flex items-center justify-center p-4 my-10 contenedor-neomorfismo max-w-7xl h-96"
+        id="contenedor-eleccion"
+      >
+        <button
+          class="w-32 p-3 mx-2 my-2 font-bold transition duration-500 transform hover:scale-110 neomorfismo-button md:p-4 md:my-4 md:w-40 md:text-lg md:mx-4 color-primary hover:bg-pink-400 hover:text-white"
+          id="btn-si"
+        >
+          SI
+        </button>
+        <button
+          class="w-32 p-3 mx-2 my-2 font-bold transition duration-500 transform hover:scale-110 neomorfismo-button md:p-4 md:my-4 md:w-40 md:text-lg md:mx-4 color-primary hover:bg-pink-400 hover:text-white"
+          id="btn-no"
+        >
+          NO
+        </button>
+      </div>
+    </div>
+    <div class="flex items-center justify-center">
+      <p class="p-1 my-2 text-lg text-center md:text-2xl color-primary">
+        Creado por
+        <a href="https://github.com/maximopeoficiales" target="_blank" class=""
+          >@maximopeoficiales</a
+        >
+      </p>
+    </div>
+    <script src="js/index.js"></script>
+    <script>
+      /***** Corazones cayendo en el blog *****/
+      if (typeof $pdj == "undefined") {
+        document.write("<" + "script");
+        document.write(' language="javascript"');
+        document.write(' type="text/javascript"');
+        document.write(
+          ' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">'
+        );
+        document.write("</" + "script" + ">");
+      }
+    </script>
+    <script>
+      if (typeof $pdj == "undefined") {
+        var $pdj = jQuery.noConflict();
+      }
+      if (!image_urls) {
+        var image_urls = Array();
+      }
+      if (!flash_urls) {
+        var flash_urls = Array();
+      }
+      image_urls["corazon"] =
+        "imgs/corazon.png";
+      $pdj(document).ready(function () {
+        var c = $pdj(window).width();
+        var d = $pdj(window).height();
+        var e = function (a, b) {
+          return Math.round(a + Math.random() * (b - a));
+        };
+        var f = function (a) {
+          setTimeout(function () {
+            a.css({
+              left: e(0, c) + "px",
+              top: "-30px",
+              display: "block",
+              opacity: "0." + e(10, 100),
+            }).animate({ top: d - 10 + "px" }, e(8500, 10000), function () {
+              $pdj(this).fadeOut("slow", function () {
+                f(a);
+              });
+            });
+          }, e(1, 9000));
+        };
+        $pdj("<div></div>")
+          .attr("id", "corazonDiv")
+          .css({
+            position: "fixed",
+            width: c - 20 + "px",
+            height: "1px",
+            left: "0px",
+            top: "-5px",
+            display: "block",
+          })
+          .appendTo("body");
+        for (var i = 1; i <= 15; i++) {
+          var g = $pdj("<img/>")
+            .attr("src", image_urls["corazon"])
+            .css({
+              position: "absolute",
+              left: e(0, c) + "px",
+              top: "-30px",
+              display: "block",
+              opacity: "0." + e(10, 100),
+              "margin-left": 0,
+            })
+            .addClass("corazonDrop")
+            .appendTo("#corazonDiv");
+          f(g);
+          g = null;
+        }
+        var h = 0;
+        var j = 0;
+        $pdj(window).resize(function () {
+          c = $pdj(window).width();
+          d = $pdj(window).height();
+        });
+      });
+    </script>
+  </body>
+</html>

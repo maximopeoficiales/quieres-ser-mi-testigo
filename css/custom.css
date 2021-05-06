@@ -1,0 +1,26 @@
+* {
+  font-family: "Pacifico", cursive;
+}
+body {
+  background-color: #dda7d6;
+}
+.contenedor-neomorfismo {
+  border-radius: 50px;
+  background: #dda7d6;
+  box-shadow: 20px 20px 60px #bc8eb6, -20px -20px 60px #fec0f6;
+}
+.neomorfismo-button {
+  border-radius: 50px;
+  background: #dda7d6;
+  box-shadow: 20px 20px 60px #bc8eb6, -20px -20px 60px #fec0f6;
+}
+.bg-color-primary {
+  background-color: black;
+}
+.color-primary {
+  color: #f7eeee;
+}
+
+.color-secondary {
+  color: #201e1e;
+}
