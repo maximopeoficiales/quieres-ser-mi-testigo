@@ -3,13 +3,19 @@ let dimensions = {
     y: ""
 }
 let images = [
-    "https://media.giphy.com/media/1hqb8LwPS2xCNCpWH8/giphy.gif",
-    "https://media.giphy.com/media/3oEhmK5PD21Of23JBK/giphy.gif",
     "https://media.giphy.com/media/l2R0cE5EqO3QHiCoU/giphy.gif",
     "https://media.giphy.com/media/Saavhnp9YYN7a/giphy.gif",
-    "https://media.giphy.com/media/hpQcDH5EfJRwxm03Uh/giphy.gif",
     "https://media.giphy.com/media/26xBRiIYbyjCzYMAU/giphy.gif",
-    "https://media.giphy.com/media/aftvlKz6bGzS0/giphy.gif",
+    "https://media.giphy.com/media/l1AsHO8u4GHnD3DOg/giphy.gif",
+    "https://media.giphy.com/media/26tPplGWjN0xLybiU/giphy.gif",
+    "https://media.giphy.com/media/5GoVLqeAOo6PK/giphy.gif",
+    "https://media.giphy.com/media/JpGCB3Wk8hWjIAR9Cz/giphy.gif",
+    "https://media.giphy.com/media/JpGCB3Wk8hWjIAR9Cz/giphy.gif",
+    "https://media.giphy.com/media/BzyTuYCmvSORqs1ABM/giphy.gif",
+    "https://media.giphy.com/media/jpbnoe3UIa8TU8LM13/giphy.gif",
+    "https://media.giphy.com/media/1x3LVhXaUdISA/giphy.gif",
+    "https://media.giphy.com/media/gjC7ucoTg5AkHGcy3J/giphy.gif",
+
 ]
 let $contenedor = document.querySelector("#contenedor-eleccion");
 let $btnNo = document.querySelector("#contenedor-eleccion");
@@ -80,7 +86,7 @@ document.querySelector("#btn-no").addEventListener("blur", (e) => {
     translateButton(e);
 });
 document.querySelector("#btn-si").addEventListener("click", (e) => {
-    reproducirMusica();
+    // reproducirMusica();
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
             confirmButton: 'w-100 p-3 mx-2 my-2  transition duration-500 transform hover:scale-110 md:p-4 md:my-4  md:text-xl md:mx-4 color-primary bg-pink-400 border-none rounded-lg shadow-xl',
@@ -92,7 +98,7 @@ document.querySelector("#btn-si").addEventListener("click", (e) => {
         title: `<h2 class='color-secondary'>Ya Sabia que querías 😍💕😻 </h2>`,
         // icon: 'info',
         html: `
-            <img src="${images[getRandomNumber(images.length)]}" alt="" srcset=""/>
+            <img src="${images[getRandomNumber(images.length)]}" alt="" srcset="" class='gift-image'/>
         `,
         showCloseButton: false,
         showCancelButton: false,

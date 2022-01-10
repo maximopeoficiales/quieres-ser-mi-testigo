@@ -5,17 +5,24 @@
   font-family: "Pacifico", cursive;
 }
 body {
-  background-color: #dda7d6;
+  background-color: #322f31;
 }
 .contenedor-neomorfismo {
   border-radius: 50px;
-  background: #dda7d6;
-  box-shadow: 20px 20px 60px #bc8eb6, -20px -20px 60px #fec0f6;
+  background: #4a4545;
+  box-shadow: 20px 20px 60px #3f3b3b, -20px -20px 60px #554f4f;
 }
 .neomorfismo-button {
   border-radius: 50px;
-  background: #dda7d6;
-  box-shadow: 20px 20px 60px #bc8eb6, -20px -20px 60px #fec0f6;
+  background: #6b6666;
+  box-shadow: 20px 20px 60px #5b5757, -20px -20px 60px #7b7575;
+}
+.neomorfismo-button:focus {
+  border: none;
+}
+.neomorfismo-button:hover {
+  background-color: rgba(244, 114, 182, 1);
+  /* box-shadow: 20px 20px 60px #bc8eb6, -20px -20px 60px #fec0f6; */
 }
 .bg-color-primary {
   background-color: black;
@@ -26,4 +33,11 @@ body {
 
 .color-secondary {
   color: #201e1e;
+}
+.text-dedication {
+  font-size: 2rem;
+}
+.gift-image {
+  width: 400px;
+  height: 400px;
 }
