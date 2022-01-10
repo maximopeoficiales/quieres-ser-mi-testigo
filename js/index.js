@@ -86,7 +86,7 @@ document.querySelector("#btn-no").addEventListener("blur", (e) => {
     translateButton(e);
 });
 document.querySelector("#btn-si").addEventListener("click", (e) => {
-    // reproducirMusica();
+    reproducirMusica();
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
             confirmButton: 'w-100 p-3 mx-2 my-2  transition duration-500 transform hover:scale-110 md:p-4 md:my-4  md:text-xl md:mx-4 color-primary bg-pink-400 border-none rounded-lg shadow-xl',
